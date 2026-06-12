@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  8router:
+    build: .
+    image: 8router:latest
+    container_name: 8router
+    restart: unless-stopped
+    ports:
+      - "20127:20127"
+    volumes:
+      - 8router-data:/app/data
+      - 8router-logs:/app/logs
+    environment:
+      - PORT=20127
+      - HOSTNAME=0.0.0.0
+      - NEXT_PUBLIC_BASE_URL=http://localhost:20127
+      - NODE_ENV=production
+      - ENABLE_REQUEST_LOGS=true
+      # Optional: Set initial admin password
+      # - INITIAL_PASSWORD=your_secure_password
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:20127/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  8router-data:
+    driver: local
+  8router-logs:
+    driver: local

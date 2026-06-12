@@ -15,7 +15,7 @@
 
   <a href="https://trendshift.io/repositories/22628" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22628" alt="decolua%2F8router | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
   
-  [🚀 Quick Start](#-quick-start) • [💡 Features](#-key-features) • [📖 Setup](#-setup-guide) • [🌐 Website](https://8router.com)
+  [🚀 Quick Start](#-quick-start) • [💡 Features](#-key-features) • [📖 Docs](#-documentation) • [🔄 vs 9Router](./COMPARISON.md)
 
   [🇻🇳 Tiếng Việt](./i18n/README.vi.md) • [🇨🇳 中文](./i18n/README.zh-CN.md) • [🇯🇵 日本語](./i18n/README.ja-JP.md) • [🇷🇺 Русский](./i18n/README.ru.md)
 </div>
@@ -1229,6 +1229,15 @@ Notes:
 
 ---
 
+## 📖 Documentation
+
+- **[Deployment Guide](./DEPLOYMENT.md)** - Local, Docker, and cloud deployment instructions
+- **[Contributing Guide](./CONTRIBUTING.md)** - How to contribute code, add providers, and report issues
+- **[Security Policy](./SECURITY.md)** - Security best practices and vulnerability reporting
+- **[8Router vs 9Router](./COMPARISON.md)** - Key differences and migration guide
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Runtime**: Node.js 20+
@@ -1269,35 +1278,25 @@ Authorization: Bearer your-api-key
 
 ## 📧 Support
 
-- **Website**: [8router.com](https://8router.com)
-- **GitHub**: [github.com/decolua/8router](https://github.com/decolua/8router)
-- **Issues**: [github.com/decolua/8router/issues](https://github.com/decolua/8router/issues)
+- **GitHub**: [github.com/sickagents/8router](https://github.com/sickagents/8router)
+- **Issues**: [github.com/sickagents/8router/issues](https://github.com/sickagents/8router/issues)
+- **Original 9Router**: [github.com/decolua/9router](https://github.com/decolua/9router)
 
 ---
 
 ## 👥 Contributors
 
-Thanks to all contributors who helped make 8Router better!
+8Router is a fork of [9router](https://github.com/decolua/9router). Thanks to all original contributors!
 
-[![Contributors](https://contrib.rocks/image?repo=decolua/8router&max=150&columns=15&anon=1&v=20260309)](https://github.com/decolua/8router/graphs/contributors)
-
----
-
-## 📊 Star Chart
-
-[![Star Chart](https://starchart.cc/decolua/8router.svg?variant=adaptive)](https://starchart.cc/decolua/8router)
-
-
-
-## 🔀 Forks
-
-**[OmniRoute](https://github.com/diegosouzapw/OmniRoute)** — A full-featured TypeScript fork of 8Router. Adds 36+ providers, 4-tier auto-fallback, multi-modal APIs (images, embeddings, audio, TTS), circuit breaker, semantic cache, LLM evaluations, and a polished dashboard. 368+ unit tests. Available via npm and Docker.
+To contribute to 8Router, see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ---
 
 ## 🙏 Acknowledgments
 
-Built on the shoulders of giants:
+8Router is built upon [9router](https://github.com/decolua/9router) by [@decolua](https://github.com/decolua) and its contributors.
+
+Original 9router was inspired by:
 
 - **[CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI)** — original Go implementation that inspired this JavaScript port.
 - **[RTK](https://github.com/rtk-ai/rtk)** ![Stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=yellow) — Rust token-saver. 8Router ports its compression pipeline to JS → **−20-40% input tokens** on every request.
